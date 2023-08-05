@@ -1,20 +1,5 @@
-﻿namespace LearningTest
-
-[<RequireQualifiedAccess>]
-module Result =
-    /// Pass in a function to handle each case of `Result`
-    let bimap onSuccess onError xR =
-       match xR with
-        | Ok x -> onSuccess x
-        | Error e -> onError e
-
+﻿module Result =
     let map = Result.map
-    let mapError = Result.mapError
-    let bind = Result.bind
-
-    // Like `map` but with a unit-returning function
-    let iter (f : _ -> uint) result =
-        map f result |> ignore
 
     /// Apply a Result<fn> to a Result<x> monadically
     let apply fR xR =
@@ -35,3 +20,22 @@ module Result =
         // loop through the list, prepending each element
         // to the initial value
         List.foldBack consR aListOfResults initialValue
+
+let aListOfResults =
+    [Ok 1; Ok 2; Ok 3; Error "Error"];
+
+let aListOfResults' : Result<int, string> list =
+    [Ok 1; Ok 2; Ok 3; Ok 4]
+
+let result = Result.sequence aListOfResults
+let result' = Result.sequence aListOfResults'
+
+let printResults result =
+    match result with
+    | Ok _ ->
+        printfn "All Results OK!"
+    | _ ->
+        printfn "You've got errors!"
+
+result |> printResults
+result' |> printResults
