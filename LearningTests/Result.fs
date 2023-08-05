@@ -35,3 +35,9 @@ module Result =
         // loop through the list, prepending each element
         // to the initial value
         List.foldBack consR aListOfResults initialValue
+
+    /// Lift a two parameter function to use Result parameters
+    let lift2 f x1 x2 =
+        let (<!>) = map
+        let (<*>) = apply
+        f <!> x1 <*> x2

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="ResultLift2Example.fsx" />
     <None Include="ResultSequenceExample.fsx" />
     <None Include="ResultApplyExample.fsx" />
     <None Include="ResultIterExample.fsx" />
