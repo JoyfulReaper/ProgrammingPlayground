@@ -13,3 +13,4 @@ let printIt x =
 let ok1 =  Ok "Some OK"
 
 ok1 |> Result.iter printIt 
+Error "x" |> Result.iter printIt

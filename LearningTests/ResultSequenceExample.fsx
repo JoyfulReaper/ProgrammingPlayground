@@ -32,8 +32,10 @@ let result' = Result.sequence aListOfResults'
 
 let printResults result =
     match result with
-    | Ok _ ->
+    | Ok x ->
         printfn "All Results OK!"
+        List.iter (fun y -> printf "%O " y) x
+        printfn ""
     | _ ->
         printfn "You've got errors!"
 

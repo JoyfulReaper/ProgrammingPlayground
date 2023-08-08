@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="ElevatedWorldBind.fsx" />
     <None Include="ElevatedWorldZip.fsx" />
     <None Include="ElevatedWorldLiftN.fsx" />
     <None Include="ElevatedWorldApply.fsx" />

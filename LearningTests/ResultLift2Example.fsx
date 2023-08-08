@@ -26,9 +26,11 @@ let x1 : Result<int, string> = Ok 5
 let x2 : Result<int, string> = Ok 10
 
 // Use 'lift2' to apply the 'add' function to the Result values 'x1' and 'x2'
-let resultSum = Result.lift2 add x1 x2
+let resultSum : Result<int, string> = Result.lift2 add (Ok 5) (Ok 10)
 
 // Match the 'resultSum' to handle the possible outcomes
 match resultSum with
 | Ok sum -> printfn "The sum is: %d" sum
 | Error errorMessage -> printfn "An error occurred: %s" errorMessage
+
+
