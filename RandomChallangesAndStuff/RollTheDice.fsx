@@ -1,6 +1,6 @@
 ﻿open System
 
-let generateAllCombinations numDie =
+let generateAllCombinations numDie = 
     let rec generateCombinations numDie currentCombination allCombinations =
         match numDie with
         | 0 ->

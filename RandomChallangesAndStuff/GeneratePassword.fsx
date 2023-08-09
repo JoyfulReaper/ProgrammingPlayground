@@ -1,9 +1,9 @@
-﻿let shuffleList (list: 'a list) =
-    let rnd = System.Random()
-    list
-    |> List.map (fun x -> (rnd.Next(), x))
-    |> List.sortBy fst
-    |> List.map snd
+﻿//let shuffleList (list: 'a list) =
+//    let rnd = System.Random()
+//    list
+//    |> List.map (fun x -> (rnd.Next(), x))
+//    |> List.sortBy fst
+//    |> List.map snd
 
 let getRandomDigit () =
     System.Random.Shared.Next(0, 11)
@@ -25,10 +25,10 @@ let getRandomPasswordComponent () =
         getRandomLetter() |> string
     | 3 ->
         getRandomSymbol()
-    | 4 ->
+    | _ ->
         (getRandomLetter() |> string).ToUpper()
 
 let generatePassword () =
     [getRandomDigit() |> string; getRandomSymbol(); (getRandomLetter() |> string).ToUpper(); (getRandomLetter() |> string).ToUpper(); for i in 1 .. 6 do getRandomPasswordComponent()]
-    |> shuffleList
+    |> List.sortBy (fun _ ->  System.Guid.NewGuid())
     |> String.concat ""

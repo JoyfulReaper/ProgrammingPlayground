@@ -52,6 +52,22 @@ let toOrderQty qty =
         None
 
 // Option.bind toOrderQty lifts it to an int option -> OrderQty Option
+// string -> OrderQty Option
 let parseOrderQty str =
     parseInt str
     |> Option.bind toOrderQty
+
+// Infix version of bind
+let (<<=) =
+    Option.bind
+
+let (>>=) opt func=
+    match opt with
+    | Some x -> func x
+    | None -> None
+
+let parseOrderQty_alt str =
+    str |> parseInt >>= toOrderQty
+
+let parseOrderQty_alt2 str =
+    toOrderQty <<= parseInt str
