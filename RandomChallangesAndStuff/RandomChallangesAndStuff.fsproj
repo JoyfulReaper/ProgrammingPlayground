@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Test.fsx" />
     <None Include="GetHostName.fsx" />
     <None Include="CowsAndBulls.fsx" />
     <None Include="rps.fsx" />
