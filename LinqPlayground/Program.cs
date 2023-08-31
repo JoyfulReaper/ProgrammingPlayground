@@ -4,11 +4,41 @@
 
     private static void Main(string[] args)
     {
-        Demo2();
+        GroupJoinDemo1();
     }
 
 
-    private static void Demo2()
+    private static void GroupJoinDemo1()
+    {
+        List<Person> people = new List<Person>() {
+            new Person() { FirstName = "John", LastName = "Doe" },
+            new Person() { FirstName = "Jane", LastName = "Doe" },
+            new Person() { FirstName = "Bob", LastName = "Smith" },
+            new Person() { FirstName = "Sally", LastName = "Smith" },
+        };
+
+        List<Pet> pets = new List<Pet>() {
+            new Pet() { Name = "Spot", Owner = "Jane" },
+            new Pet() { Name = "Scruffy", Owner = "John" },
+            new Pet() { Name = "Scooby", Owner = "Jane" },
+            new Pet() { Name = "Spike", Owner = "Bob" },
+            new Pet() { Name = "Shelly", Owner = "Sally" },
+        };
+
+        var query =
+            from person in people
+            join pet in pets on person.FirstName equals pet.Owner into gj
+            from subpet in gj
+            select new
+            {
+                OwnerName = person.FirstName,
+                PetName = subpet.Name,
+            };
+
+        var test = 1;
+    }
+
+    private static void JoinDemo1()
     {
         var Players = new List<Player> {
             new Player { Name = "Sue", Number = 1 },
@@ -88,7 +118,7 @@
     }
 
 
-    private static void Demo1()
+    private static void GroupByDemo1()
     {
         var carList = new List<Car>();
         // Add 20 cars with at least 5 random colors
@@ -139,6 +169,11 @@
     }
 }
 
+
+
+
+
+
 public class Car
 {
     public string Color { get; set; } = default!;
@@ -161,4 +196,16 @@ public class Jersey
 {
     public int Number { get; set; }
     public int Size { get; set; }
+}
+
+public class Person
+{
+    public string FirstName { get; set; } = default!;
+    public string LastName { get; set; } = default!;
+}
+
+public class Pet
+{
+    public string Name { get; set; } = default!;
+    public string Owner { get; set; } = default!;
 }
