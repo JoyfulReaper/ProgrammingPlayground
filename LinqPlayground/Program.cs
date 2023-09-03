@@ -4,7 +4,7 @@
 
     private static void Main(string[] args)
     {
-        GroupJoinDemo1();
+        JoinDemo1();
     }
 
 
@@ -53,6 +53,8 @@
             new Player { Name = "Bill", Number = 13 },
         };
 
+        
+        
         var jerseys = new List<Jersey> {
             new Jersey { Number = 1, Size = 3 },
             new Jersey { Number = 2, Size = 2 },

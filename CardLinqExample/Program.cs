@@ -20,6 +20,13 @@ internal class Program
 Count: {group.Count()}
 Minimum: {group.Min()}
 Maximum: {group.Max()}");
+
+            Console.WriteLine("Cards: ");
+            foreach (var card in group)
+            {
+                Console.WriteLine(card);
+            }
+            Console.WriteLine();
         }
     }
 }
