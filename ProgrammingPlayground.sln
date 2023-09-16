@@ -23,11 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linq", "Linq\Linq.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqExample", "LinqExample\LinqExample.csproj", "{1FA62E27-8FA8-43C0-83EE-7043CB8329C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodChaningExample", "MethodChaningExample\MethodChaningExample.csproj", "{F43CDECC-54E7-4ED2-BDAF-BFBC79325D9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodChaningExample", "MethodChaningExample\MethodChaningExample.csproj", "{F43CDECC-54E7-4ED2-BDAF-BFBC79325D9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardLinqExample", "CardLinqExample\CardLinqExample.csproj", "{136CFFCE-72B2-45A5-B84D-B9CCF73B7307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardLinqExample", "CardLinqExample\CardLinqExample.csproj", "{136CFFCE-72B2-45A5-B84D-B9CCF73B7307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqPlayground", "LinqPlayground\LinqPlayground.csproj", "{9ACCA7D6-3C49-4B7D-BF5B-CF4EE695BB6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqPlayground", "LinqPlayground\LinqPlayground.csproj", "{9ACCA7D6-3C49-4B7D-BF5B-CF4EE695BB6E}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpScripts", "FSharpScripts\FSharpScripts.fsproj", "{228A4009-238E-4FD4-BB20-C5DE2FA1DF55}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BenGobeil", "BenGobeil\BenGobeil.fsproj", "{13E7F223-7AC3-48DC-9E04-31AF0EDDED71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{9ACCA7D6-3C49-4B7D-BF5B-CF4EE695BB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ACCA7D6-3C49-4B7D-BF5B-CF4EE695BB6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ACCA7D6-3C49-4B7D-BF5B-CF4EE695BB6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228A4009-238E-4FD4-BB20-C5DE2FA1DF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228A4009-238E-4FD4-BB20-C5DE2FA1DF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228A4009-238E-4FD4-BB20-C5DE2FA1DF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228A4009-238E-4FD4-BB20-C5DE2FA1DF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E7F223-7AC3-48DC-9E04-31AF0EDDED71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E7F223-7AC3-48DC-9E04-31AF0EDDED71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E7F223-7AC3-48DC-9E04-31AF0EDDED71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E7F223-7AC3-48DC-9E04-31AF0EDDED71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
