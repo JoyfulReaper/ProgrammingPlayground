@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Tut-04.fsx" />
+    <Compile Include="Tut-02.fs" />
     <None Include="FSharpFundamentalsPart1.fsx" />
+    <Compile Include="Tut-03.fs" />
   </ItemGroup>
 
 </Project>

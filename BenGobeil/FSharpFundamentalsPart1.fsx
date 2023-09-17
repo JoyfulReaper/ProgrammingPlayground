@@ -46,3 +46,19 @@ let operation''' number =
     |> times2
     |> pow2
     
+// Composition Operator (Point free)
+let operation'''' =
+    add3'' 
+    >> times2 
+    >> pow2
+
+operation''' 1.
+operation'''' 1.
+
+// Defining Operators
+let (>>) f g =
+    fun x ->
+        x
+        |> f
+        |> g
+        // g(f x)
