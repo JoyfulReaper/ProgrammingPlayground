@@ -6,13 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="MapAndBindPractice_091823.fsx" />
+    <None Include="DumbZombieThing.fsx" />
     <None Include="ElevatedWorld.fsx" />
     <None Include="OptionBindExample.fsx" />
     <None Include="OptionApplyExample.fsx" />
     <None Include="ListMapExample.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
-  <ItemGroup />
 
 </Project>
