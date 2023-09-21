@@ -53,3 +53,9 @@ for (gender, people) in gbGender do
     printfn "%A" gender
     for person in people do
         printfn "%s" person.Name
+
+gbGender
+|> List.iter (fun (gender, people) ->
+    printfn "%A" gender
+    people
+    |> List.iter (fun p -> printfn "%s" p.Name))
