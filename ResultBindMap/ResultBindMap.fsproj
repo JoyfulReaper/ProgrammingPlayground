@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="MapAndBindPractice_092323.fsx" />
     <None Include="MapAndBindPractice_091823.fsx" />
     <None Include="DumbZombieThing.fsx" />
     <None Include="ElevatedWorld.fsx" />
