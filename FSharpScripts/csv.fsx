@@ -26,8 +26,9 @@ let writeFile path (data:string seq) =
 let readFile : DataReader =
     fun path ->
         try
-            let lines = File.ReadLines(path) |> Seq.toList
-            Ok lines
+            File.ReadAllLines(path)
+            |>Seq.ofArray
+            |> Ok
         with
             | exn -> Error exn
             

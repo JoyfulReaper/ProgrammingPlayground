@@ -14,6 +14,7 @@
     <None Include="foldExample.fsx" />
     <None Include="RollTheDice.fsx" />
     <Compile Include="Program.fs" />
+    <None Include="CompareStrings.fsx" />
   </ItemGroup>
 
   <ItemGroup />
