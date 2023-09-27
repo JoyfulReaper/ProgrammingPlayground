@@ -12,6 +12,7 @@
     <None Include="ResultIterExample.fsx" />
     <Compile Include="Result.fs" />
     <Compile Include="ResultBiMapExample.fsx" />
+    <None Include="ResultMapMapError.fsx" />
   </ItemGroup>
 
   <ItemGroup />
