@@ -37,14 +37,13 @@ let takeOffPants person =
 let displayPerson person =
     match person with
        | Ok person ->
-           printfn "Happy birthday %s!" person.Name
-           printfn "%A" person
+           sprintf "%A" person
        | Error e ->
-           printfn "Error: %A" e
+           sprintf "Error: %A" e
         
 let haveABirthday (person:Person) =
-    person |> Ok |> displayPerson
-        
+    person |> Ok |> displayPerson |> printfn "%s"
+    
     person
     |> happyBirthday
     |> Result.map putOnMask
@@ -53,6 +52,7 @@ let haveABirthday (person:Person) =
                                  | FailedToHaveBirthday -> SystemErrorOccured "Failed to have birthday"
                                  | FailedToTakeOffPants s -> sprintf "Failed to take off pants: %s"s |> SystemErrorOccured )
     |> displayPerson
+    |> printfn "%s"
     
 let newPerson =
     haveABirthday john

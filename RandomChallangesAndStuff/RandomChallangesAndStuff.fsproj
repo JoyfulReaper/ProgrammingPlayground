@@ -15,6 +15,7 @@
     <None Include="RollTheDice.fsx" />
     <Compile Include="Program.fs" />
     <None Include="CompareStrings.fsx" />
+    <None Include="PartialActivePattern.fsx" />
   </ItemGroup>
 
   <ItemGroup />
