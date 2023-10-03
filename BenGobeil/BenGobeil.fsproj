@@ -11,6 +11,7 @@
     <None Include="FSharpFundamentalsPart1.fsx" />
     <Compile Include="Tut-03.fs" />
     <None Include="FunctorsApplicativesMonads.fsx" />
+    <None Include="ComputationExpression1.fsx" />
   </ItemGroup>
 
 </Project>

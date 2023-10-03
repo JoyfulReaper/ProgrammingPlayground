@@ -35,6 +35,10 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BenGobeil", "BenGobeil\BenG
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpLearningScratchPad", "FSharpLearningScratchPad\FSharpLearningScratchPad.fsproj", "{F528C91E-B70B-4BEF-8FBD-A319FB205759}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BenGClasses", "BenGClasses\BenGClasses.fsproj", "{BE8C2B56-D2CC-4C50-A569-86DCBCC84675}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RandomScripts", "RandomScripts\RandomScripts.fsproj", "{971E8C64-2C92-4800-AC58-1475C93F558C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{F528C91E-B70B-4BEF-8FBD-A319FB205759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F528C91E-B70B-4BEF-8FBD-A319FB205759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F528C91E-B70B-4BEF-8FBD-A319FB205759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE8C2B56-D2CC-4C50-A569-86DCBCC84675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE8C2B56-D2CC-4C50-A569-86DCBCC84675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE8C2B56-D2CC-4C50-A569-86DCBCC84675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8C2B56-D2CC-4C50-A569-86DCBCC84675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971E8C64-2C92-4800-AC58-1475C93F558C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971E8C64-2C92-4800-AC58-1475C93F558C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971E8C64-2C92-4800-AC58-1475C93F558C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971E8C64-2C92-4800-AC58-1475C93F558C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
