@@ -39,15 +39,16 @@ let option = OptionBuilder()
 
 let addThreeOptions (intOption1: int option) (intOption2: int option) (intOption3: int option)  =
     option {
-        // let! x = intOption1
-        // let! y = intOption2
-        // let! z = intOption3
-        //
-        // return x + y + z
-        return! intOption1
+        let! x = intOption1
+        and! y = intOption2
+        and! z = intOption3
+        
+        return x + y + z
+        //return! intOption1
     }
     
 // Monadic (bind)
+// Sequential - If one fails the test are not executed
 let monadicAdd (intOption1: int option) (intOption2: int option) (intOption3: int option)  =
     intOption1
     |> Option.bind ( fun x ->
@@ -113,11 +114,16 @@ type ListBuilder() =
         let result = f()
         printfn $"Ending delay: {result}"
         result
+        
+    member _.Run(valueOfLastDelay) =
+        valueOfLastDelay
+        |> List.toArray
+        
 let list = ListBuilder()
 
-let newList: int list = list { 1
-                               2
-                               3 }
+let newList: int array = list { 1
+                                2
+                                3 }
 
 ///////////////////////////////////////////
 
