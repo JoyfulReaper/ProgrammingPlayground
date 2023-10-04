@@ -12,6 +12,7 @@
     <Compile Include="Tut-03.fs" />
     <None Include="FunctorsApplicativesMonads.fsx" />
     <None Include="ComputationExpression1.fsx" />
+    <None Include="Async.fsx" />
   </ItemGroup>
 
 </Project>
