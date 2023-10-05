@@ -16,3 +16,6 @@ test
 let value (Total v) = v
 
 test |> value
+
+let deconstructParameter (Total v) =
+    v
