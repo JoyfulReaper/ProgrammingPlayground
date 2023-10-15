@@ -8,6 +8,7 @@
     <ItemGroup>
         <Compile Include="Program.fs"/>
         <None Include="EmailAPTest.fsx" />
+        <None Include="FunctionalValidation.fsx" />
     </ItemGroup>
 
 </Project>
