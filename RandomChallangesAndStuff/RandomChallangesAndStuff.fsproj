@@ -16,6 +16,7 @@
     <Compile Include="Program.fs" />
     <None Include="CompareStrings.fsx" />
     <None Include="PartialActivePattern.fsx" />
+    <None Include="GuessGame.fsx" />
   </ItemGroup>
 
   <ItemGroup />
