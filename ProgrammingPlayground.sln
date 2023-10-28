@@ -39,6 +39,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BenGClasses", "BenGClasses\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RandomScripts", "RandomScripts\RandomScripts.fsproj", "{971E8C64-2C92-4800-AC58-1475C93F558C}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OryxDemo", "OryxDemo\OryxDemo.fsproj", "{6B2AE4BA-D97B-4A49-ABB2-86C31A3AE78C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{971E8C64-2C92-4800-AC58-1475C93F558C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{971E8C64-2C92-4800-AC58-1475C93F558C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{971E8C64-2C92-4800-AC58-1475C93F558C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2AE4BA-D97B-4A49-ABB2-86C31A3AE78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2AE4BA-D97B-4A49-ABB2-86C31A3AE78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2AE4BA-D97B-4A49-ABB2-86C31A3AE78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2AE4BA-D97B-4A49-ABB2-86C31A3AE78C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
